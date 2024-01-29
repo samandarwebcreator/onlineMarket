@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Project</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__background">
+        <div class="container">
+          <div class="header__main-box">
+            <div class="header__logo">
+              <a href="#">
+                <img src="./assets/icons/website-logo.svg" alt="website logo" />
+              </a>
+            </div>
+            <div class="header__category">
+              <select name="select" id="header__select">
+                <option id="selectButton" value="Каталог">
+                  ☰ &nbsp; Каталог
+                </option>
+                <option class="selectCategory" value="Блинчики">
+                  Блинчики
+                </option>
+                <option class="selectCategory" value="Молоко">Молоко</option>
+                <option class="selectCategory" value="Колбаса">Колбаса</option>
+                <option class="selectCategory" value="Сосиски">Сосиски</option>
+                <option class="selectCategory" value="Худший">Худший</option>
+                <option class="selectCategory" value="Комбайн">Комбайн</option>
+              </select>
+              <div id="header__select-btn"></div>
+            </div>
+            <form id="header__form">
+              <input
+                id="srchInp"
+                type="input"
+                placeholder="Найти товар"
+                required
+              />
+              <button id="srchBtn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.5 10.5C2.5 6.08172 6.08172 2.5 10.5 2.5C14.9183 2.5 18.5 6.08172 18.5 10.5C18.5 14.9183 14.9183 18.5 10.5 18.5C6.08172 18.5 2.5 14.9183 2.5 10.5ZM10.5 3.5C6.63401 3.5 3.5 6.63401 3.5 10.5C3.5 14.366 6.63401 17.5 10.5 17.5C14.366 17.5 17.5 14.366 17.5 10.5C17.5 6.63401 14.366 3.5 10.5 3.5Z"
+                    fill="#414141"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.4463 15.4464C15.6415 15.2512 15.9581 15.2512 16.1534 15.4464L21.3534 20.6464C21.5486 20.8417 21.5486 21.1583 21.3534 21.3535C21.1581 21.5488 20.8415 21.5488 20.6463 21.3535L15.4463 16.1535C15.251 15.9583 15.251 15.6417 15.4463 15.4464Z"
+                    fill="#414141"
+                  />
+                </svg>
+              </button>
+            </form>
+
+            <ul class="header__list">
+              <li>
+                <button id="favourites__button">
+                  <img
+                    src="./assets/icons/favourites.svg"
+                    alt="Избранное"
+                    width="24"
+                    height="24"
+                  />
+                </button>
+                <p class="header__list-text">Избранное</p>
+              </li>
+              <li>
+                <button id="products__button">
+                  <img
+                    src="./assets/icons/product.svg"
+                    alt="продукты"
+                    width="24"
+                    height="24"
+                  />
+                </button>
+                <p class="header__list-text">продукты</p>
+              </li>
+              <li>
+                <button id="basket__button">
+                  <img
+                    src="./assets/icons/sellBox.svg"
+                    alt="Корзина"
+                    width="24"
+                    height="24"
+                  />
+                </button>
+                <p class="header__list-text">Корзина</p>
+              </li>
+            </ul>
+
+            <div class="header__user-box">
+              <img
+                src="./assets/icons/user-image.svg"
+                alt="user avatar"
+                width="40px"
+                height="40px"
+                style="cursor: pointer"
+              />
+              <p class="header__user-name"></p>
+              <div class="header__user-settings">
+                <button id="header__user-btn">
+                  <img src="./assets/icons/dropdown.svg" alt="dropdown" />
+                </button>
+                <div id="header__user-wrapper"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__background">
+          <div class="container">
+            <div class="hero__main-box">
+              <div class="hero__image-box">
+                <img src="./assets/images/hero-image.png" alt="flowers" />
+                <h1 class="hero__title">Доставка бесплатно от 1000 ₽</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stock__section">
+        <div class="container">
+          <div class="select__stock-box"></div>
+
+          <div class="stock__main-box">
+            <div class="stock__title-box">
+              <h2 class="stock__title">Акции</h2>
+              <div class="stock__title-linkBox">
+                <p class="stock__title-link">Все продукты</p>
+                <a href="#">
+                  <img
+                    class="stock__link-image"
+                    src="./assets/icons/next-arrow.svg"
+                    alt="right arrow"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="stock__card-wrapper"></div>
+          </div>
+
+          <div class="stock__main-box">
+            <div class="stock__title-box">
+              <h2 class="stock__title">Новинки</h2>
+              <div class="stock__title-linkBox">
+                <p class="stock__title-link">Все продукты</p>
+                <a href="#">
+                  <img
+                    class="stock__link-image"
+                    src="./assets/icons/next-arrow.svg"
+                    alt="right arrow"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="stock__secondCard-wrapper"></div>
+
+          <div class="stock__main-box">
+            <div class="stock__title-box">
+              <h2 class="stock__title">Покупали раньше</h2>
+              <div class="stock__title-linkBox">
+                <p class="stock__title-link">Все продукты</p>
+                <a href="#">
+                  <img
+                    class="stock__link-image"
+                    src="./assets/icons/next-arrow.svg"
+                    alt="right arrow"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="stock__thirdCard-wrapper"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="appAdvert">
+        <div class="container">
+          <div class="appAdvert__main-box">
+            <div class="appAdvert__title-box">
+              <h3 class="appAdvert__title">Специальные предложения</h3>
+            </div>
+            <div class="appAdvert__wrapper">
+              <div class="appAdvert__inner-wrapper">
+                <div>
+                  <h3 class="appAdvert__wrapper-title">
+                    Оформите карту «Северяночка»
+                  </h3>
+                  <p class="appAdvert__wrapper-text">
+                    И получайте бонусы при покупке в магазинах и на сайте
+                  </p>
+                </div>
+                <div>
+                  <img src="./assets/images/card.png" alt="card" />
+                </div>
+              </div>
+              <div class="appAdvert__inner-wrapper second__wrapper">
+                <div>
+                  <h3 class="appAdvert__wrapper-title">
+                    Покупайте акционные товары
+                  </h3>
+                  <p class="appAdvert__wrapper-text">
+                    И получайте вдвое больше бонусов
+                  </p>
+                </div>
+                <div>
+                  <img src="./assets/images/basket.png" alt="card" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="location__section">
+        <div class="container">
+          <div class="location__main-box">
+            <div>
+              <h3>Наши магазины</h3>
+            </div>
+            <div>
+              <a href="#">п.Щельяюр</a>
+              <a href="#">д.Вертеп</a>
+              <a href="#">с.Краснобор</a>
+              <a href="#">д.Диюр</a>
+            </div>
+
+            <div>
+              <iframe
+                class="location__map"
+                src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d225931.66609672722!2d54.463033345116415!3d63.74296066677754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d63.8976082!2d55.028946499999996!4m5!1s0x4475b8cd9d17ae4b%3A0x102a3a583f194c0!2sKomi%20Republic%2C%20Russia!3m2!1d63.8630539!2d54.831269!5e0!3m2!1sen!2s!4v1705526181289!5m2!1sen!2s"
+                width="1300"
+                height="354"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="statistics__section">
+        <div class="container">
+          <div class="statistics__main-box">
+            <div class="statistics__wrapper">
+              <div class="stock__title-box">
+                <h2 class="stock__title">Статьи</h2>
+                <div class="stock__title-linkBox">
+                  <p class="stock__title-link">Все продукты</p>
+                  <a href="#">
+                    <img
+                      class="stock__link-image"
+                      src="./assets/icons/next-arrow.svg"
+                      alt="right arrow"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="statistics__card-wrapper">
+                <div class="statistics__card-box">
+                  <div class="statistics__card-imageBox">
+                    <img
+                      src="./assets/images/doctor-image.png"
+                      alt="doctor"
+                      width="376"
+                      height="162"
+                    />
+                  </div>
+                  <div class="statistics__card-content">
+                    <p class="statistics__card-date">05.03.2021</p>
+                    <h4 class="statistics__card-title">
+                      Режим использования масок и перчаток на территории
+                      магазинов
+                    </h4>
+                    <p class="statistics__card-description">
+                      Подробная информация о режимах использования масок и
+                      перчаток на территории магазинов "ЛЕНТА". Информация
+                      обновляется каждый будний день.
+                    </p>
+                    <a class="statistics__card-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="statistics__card-box">
+                  <div class="statistics__card-imageBox">
+                    <img
+                      src="./assets/images/nature-image.png"
+                      alt="nature"
+                      width="376"
+                      height="162"
+                    />
+                  </div>
+                  <div class="statistics__card-content">
+                    <p class="statistics__card-date">05.03.2021</p>
+                    <h4 class="statistics__card-title">
+                      Весеннее настроение для каждой
+                    </h4>
+                    <p class="statistics__card-description second__text">
+                      8 Марта – это не просто Международный женский день, это
+                      ещё день тюльпанов, приятных сюрпризов и праздничных
+                      тёплых пожеланий.
+                    </p>
+                    <a class="statistics__card-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+
+                <div class="statistics__card-box">
+                  <div class="statistics__card-imageBox">
+                    <img
+                      src="./assets/images/fruits-image.png"
+                      alt="fruits"
+                      width="376"
+                      height="162"
+                    />
+                  </div>
+                  <div class="statistics__card-content">
+                    <p class="statistics__card-date">22.02.2020</p>
+                    <h4 class="statistics__card-title">
+                      ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!
+                    </h4>
+                    <p class="statistics__card-description">
+                      Голосуйте за любимые категории, выбирайте
+                      категорию-победителя в мобильном приложении и получайте
+                      кешбэк 10% баллами в апреле!
+                    </p>
+                    <a class="statistics__card-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__background">
+        <div class="container">
+          <div class="footer__main-box">
+            <a href="#"
+              ><img src="./assets/icons/footer-logo.svg" alt="website logo"
+            /></a>
+            <div class="footer__list-box">
+              <ul class="footer__list">
+                <li><a class="footer__list-link" href="#">О компании</a></li>
+                <li><a class="footer__list-link" href="#">Контакты</a></li>
+                <li><a class="footer__list-link" href="#">Вакансии</a></li>
+                <li><a class="footer__list-link" href="#">Статьи</a></li>
+                <li>
+                  <a class="footer__list-link" href="#"
+                    >Политика обработки персональных данных</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__social-links">
+              <a target="_blank" href="https://www.instagram.com/"
+                ><img
+                  src="./assets/icons/instagram.svg"
+                  alt="instagram"
+                  width="24"
+                  height="24"
+              /></a>
+              <a target="_blank" href="https://vk.com/"
+                ><img
+                  src="./assets/icons/w.svg"
+                  alt="wk"
+                  width="24"
+                  height="24"
+              /></a>
+              <a target="_blank" href="https://www.facebook.com/"
+                ><img
+                  src="./assets/icons/facebook.svg"
+                  alt="facebook"
+                  width="24"
+                  height="24"
+              /></a>
+              <a target="_blank" href="https://ok.ru/"
+                ><img
+                  src="./assets/icons/ok.svg"
+                  alt="ok"
+                  width="24"
+                  height="24"
+              /></a>
+            </div>
+            <div class="footer__contact-box">
+              <img
+                src="./assets/icons/phone.svg"
+                alt="phone"
+                width="24"
+                height="24"
+              />
+              <p class="footer__phoneNumber">8 800 777 33 33</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="./identifyUser.js"></script>
+  </body>
+</html>

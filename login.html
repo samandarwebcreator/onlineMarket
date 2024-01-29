@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div class="login__main-box">
+      <div>
+        <img
+          style="cursor: pointer; margin-bottom: 40px"
+          src="./assets/icons/website-logo.svg"
+          alt="website logo"
+        />
+      </div>
+      <form>
+        <p class="error__message">Password or Username is not given!</p>
+        <p class="input__text">Email</p>
+        <input
+          type="username"
+          placeholder="Enter your username"
+          id="mailInput"
+          required
+        />
+        <p class="input__text">Password</p>
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          id="passwordInput"
+        />
+
+        <input id="profileImage" type="file" required />
+
+        <button id="btn">Log in</button>
+      </form>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

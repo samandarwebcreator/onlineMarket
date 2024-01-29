@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Products!</title>
+    <link rel="stylesheet" href="./addProduct.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1 class="addProducts__title">Want to add some products?</h1>
+        <input
+          id="titleAdd"
+          type="text"
+          placeholder="Enter the title! "
+          required
+        />
+        <input
+          id="priceAdd"
+          type="number"
+          placeholder="Enter the price!"
+          required
+        />
+        <input
+          id="descAdd"
+          type="text"
+          placeholder="Enter the description!"
+          required
+        />
+        <select name="select" id="category__select">
+          <option value="select">Select</option>
+          <option value="Акции">Акции</option>
+          <option value="Новинки">Новинки</option>
+          <option value="Покупалираньше">Покупали раньше</option>
+        </select>
+        <input id="imageAdd" type="file" required />
+        <button id="productbtn">Add product</button>
+
+        <div id="addedProducts"></div>
+      </form>
+    </div>
+    <script src="./addProduct.js"></script>
+  </body>
+</html>

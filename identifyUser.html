@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin or User Page</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./identifyUser.css" />
+  </head>
+  <body>
+    <div class="login__main-box">
+      <h1 class="identifier__title">Are you a User or an Admin?</h1>
+      <form class="identify__form">
+        <div class="identify__box">
+          <select name="select" id="identify__select">
+            <option value="options">Your status?</option>
+            <option id="identifyUser" value="user">I am a User!</option>
+            <option id="identifyUser" value="admin">I am an Admin!</option>
+          </select>
+          <div class="identifyBtn__box">
+            <button id="identifyBtn">Log in</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./identifyUser.js"></script>
+  </body>
+</html>

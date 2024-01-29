@@ -1,0 +1,119 @@
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v28-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v28-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/rubik-v28-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/rubik-v28-latin-700italic.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/rubik-v28-latin-900.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fcd5bad2;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 1225px;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
+.login__main-box {
+  border-radius: 40px;
+  border: 3px solid #fcd5ba;
+  background-color: white;
+  backdrop-filter: blur(12.5px);
+  width: 390px;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 48px 94px;
+}
+
+#mailInput,
+#passwordInput {
+  width: 89%;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+#btn {
+  width: 100%;
+  padding: 13px 20px;
+  border-radius: 10px;
+  background-color: #fcd5ba;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 30px;
+}
+
+#btn:hover {
+  background-color: transparent;
+  border: 2px solid #f7b98dd2;
+  color: #ffb37d;
+}
+
+#mailInput,
+#passwordInput {
+  margin-bottom: 60px;
+}
+
+.input__text {
+  margin-bottom: 4px;
+}
+
+.error__message {
+  color: red;
+  margin-bottom: 20px;
+}
+
+#profileImage {
+  width: 250px;
+  margin-bottom: 40px;
+}
+
+#selectAdmin {
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  outline-color: transparent;
+  border: 2px solid transparent;
+  background-color: #fcd5ba;
+}
